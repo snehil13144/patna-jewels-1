@@ -1,0 +1,26 @@
+{
+  "summary": "First-finish latency test for Abhushan Nirmata jewellery site. All 3 backend endpoints and all 15 frontend UI checks passed. Contact form successfully POSTs to /api/enquiries (200) and resets after submission.",
+  "tested_scope": ["backend", "frontend", "integration"],
+  "passed": [
+    "GET /api/ -> 200 with health message 'Abhushan Nirmata API is running'",
+    "POST /api/enquiries valid payload -> 200 with id + created_at",
+    "POST /api/enquiries missing required fields -> 422 validation error",
+    "GET /api/enquiries -> 200 list sorted by created_at desc (verified newest-first)",
+    "Home page loads with data-testid='home-page'; brand 'Abhushan Nirmata' visible",
+    "Navbar present with all 6 nav links (Home, Collections, Heritage, Reviews, Visit, Contact) and CALL STORE",
+    "Hero explore button (data-testid='hero-explore-btn') present",
+    "All 4 collection cards (gold, diamond, silver, bridal) present; each links to https://wa.me/919113777874 with target=_blank",
+    "Heritage section present and contains owner name 'Anjan Kumar'",
+    "Testimonials section present",
+    "Visit section shows correct address (Rajabazar Pal Market), phone (+91 91137 77874), hours (12:00 PM – 8:30 PM), and Google Maps iframe (data-testid='visit-map')",
+    "WhatsApp FAB present linking to https://wa.me/919113777874",
+    "Footer contains address, phone, hours",
+    "Contact form full flow: fill name/phone/message + interest, submit -> POST /api/enquiries returns 200, success toast 'Enquiry sent. We will get back to you shortly.' shown, form reset to empty"
+  ],
+  "failed": [],
+  "action_items": [],
+  "success_rate": {"backend": "100%", "frontend": "100%"},
+  "retest_needed": false,
+  "full_testing_deferred": true,
+  "notes": "Empty-form submit relies on native HTML5 required validation (browser-blocked, no API call fired) rather than a JS toast — this is acceptable behavior. Interest field is a native <select>, not a Radix dropdown; still works via keyboard/change. No blockers found."
+}
