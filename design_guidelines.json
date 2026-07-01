@@ -1,0 +1,138 @@
+{
+  "project_context": {
+    "brand_name": "Abhushan Nirmata",
+    "domain": "Jewellery Shop (Showcase/Catalog)",
+    "target_audience": "Local customers in Patna seeking luxury, traditional, and high-end jewelry (Gold, Diamond, Silver, Bridal)",
+    "design_archetype": "Archetype 5: Luxury (Premium, Depth, Mystery)",
+    "theme": "Dark",
+    "emotional_tone": "Opulent, Heritage, Trustworthy, Cinematic, Royal",
+    "key_functionalities": [
+      "Hero section with shop branding",
+      "Featured jewelry collections bento grid",
+      "About the shop & owner story",
+      "Customer testimonials",
+      "Contact/enquiry form",
+      "WhatsApp floating button",
+      "Store address/map and opening hours",
+      "Social media/Instagram feed"
+    ]
+  },
+  "colors": {
+    "background": {
+      "primary": "#110A0C",
+      "secondary": "#1C0F13",
+      "description": "Deep, almost-black maroon/wine for a cinematic, royal feel. Never use pure black."
+    },
+    "surface": {
+      "card": "#2B171D",
+      "glass": "rgba(28, 15, 19, 0.6)",
+      "description": "Use rich maroon with subtle grain for cards, and glassmorphism for sticky headers."
+    },
+    "text": {
+      "primary": "#FDFBF7",
+      "secondary": "#D9C8B4",
+      "accent": "#D4AF37",
+      "description": "Warm creams for readability. Metallic gold (#D4AF37) for highlights and primary CTA text."
+    },
+    "border": {
+      "default": "rgba(212, 175, 55, 0.15)",
+      "hover": "rgba(212, 175, 55, 0.5)",
+      "description": "Borders should always be a low-opacity gold to mimic metallic edges."
+    },
+    "accent": {
+      "primary": "#D4AF37",
+      "hover": "#C5A059",
+      "whatsapp": "#25D366",
+      "description": "Classic jewelry gold. WhatsApp button should retain brand green but styled elegantly."
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Cormorant Garamond, serif",
+      "body": "Outfit, sans-serif",
+      "imports": [
+        "@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap');"
+      ]
+    },
+    "rules": {
+      "h1": "text-5xl md:text-7xl font-light tracking-tighter leading-none text-[#FDFBF7]",
+      "h2": "text-3xl md:text-5xl font-light tracking-tight text-[#FDFBF7]",
+      "h3": "text-xl md:text-2xl font-medium tracking-normal text-[#D4AF37]",
+      "body": "text-base md:text-lg font-light leading-relaxed text-[#D9C8B4]",
+      "overline": "text-xs md:text-sm uppercase tracking-[0.2em] font-medium text-[#D4AF37]",
+      "button": "text-sm uppercase tracking-widest font-medium"
+    }
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "Use generous padding: py-24 or py-32 for sections to give a breathable, editorial feel.",
+    "grid_system": {
+      "collections": "Mode A: 'Tetris' Grid (Bento). grid-cols-1 md:grid-cols-12 gap-6. Make Gold col-span-8 row-span-2, Bridal col-span-4 row-span-2, Diamond col-span-4, Silver col-span-8. Force asymmetry.",
+      "general": "Never center everything. Use asymmetric alignments for visual tension."
+    },
+    "hero_overlay": "bg-black/50 or bg-gradient-to-t from-[#110A0C] via-black/40 to-black/20. Ensure background image breathes while text remains readable.",
+    "glassmorphism": "For sticky nav: backdrop-blur-xl bg-[#1C0F13]/70 border-b border-[#D4AF37]/20."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#D4AF37] text-[#110A0C] hover:bg-[#C5A059] rounded-none px-8 py-4 transition-all duration-300",
+      "secondary": "bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37]/10 rounded-none px-8 py-4 transition-all duration-300"
+    },
+    "cards": {
+      "default": "bg-[#2B171D] border border-[#D4AF37]/15 hover:border-[#D4AF37]/40 transition-all duration-500 overflow-hidden",
+      "image_hover": "Scale image by 1.05 on card hover using group-hover:scale-105 transition-transform duration-700 ease-out"
+    },
+    "forms": {
+      "inputs": "bg-[#1C0F13] border-b border-[#D4AF37]/30 border-t-0 border-l-0 border-r-0 rounded-none px-0 py-3 text-[#FDFBF7] focus:ring-0 focus:border-[#D4AF37] placeholder-[#D9C8B4]/50",
+      "labels": "text-[#D9C8B4] text-sm tracking-wide"
+    }
+  },
+  "media_assets": {
+    "hero": {
+      "url": "https://images.pexels.com/photos/12708653/pexels-photo-12708653.jpeg",
+      "alt": "South Asian woman in rich traditional bridal attire with intricate jewelry"
+    },
+    "collections": {
+      "gold": {
+        "url": "https://images.pexels.com/photos/28976815/pexels-photo-28976815.jpeg",
+        "alt": "Luxurious gold necklace elegantly displayed"
+      },
+      "diamond": {
+        "url": "https://images.pexels.com/photos/32988751/pexels-photo-32988751.jpeg",
+        "alt": "Exquisite diamond ring displayed on soft velvet"
+      },
+      "bridal": {
+        "url": "https://images.unsplash.com/photo-1617633150878-7df1d12a9a57?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBicmlkYWwlMjBqZXdlbHJ5fGVufDB8fHx8MTc4Mjg5NzAyOHww&ixlib=rb-4.1.0&q=85",
+        "alt": "Woman in red and gold traditional jewelry"
+      },
+      "silver": {
+        "url": "https://images.unsplash.com/photo-1696533700445-9cc60ac4a651?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwyfHxzaWx2ZXIlMjBqZXdlbHJ5JTIwdHJhZGl0aW9uYWx8ZW58MHx8fHwxNzgyODk3MDUxfDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Traditional silver jewelry"
+      }
+    },
+    "about_store": {
+      "url": "https://images.unsplash.com/photo-1775021723698-b9afeaa084d1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBqZXdlbHJ5JTIwc3RvcmUlMjBpbnRlcmlvciUyMGdvbGR8ZW58MHx8fHwxNzgyODk3MDUxfDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Luxury jewelry store interior display"
+    }
+  },
+  "content_strategy": {
+    "hero_copy": {
+      "heading": "Crafting Legacy, One Jewel at a Time",
+      "subheading": "Welcome to Abhushan Nirmata. Patna’s premier destination for exquisite Gold, Diamond, and Traditional Bridal collections."
+    },
+    "owner_info": {
+      "name": "Anjan Kumar",
+      "description": "With a passion for intricate craftsmanship, Anjan Kumar curates collections that honor traditional Indian artistry while embracing modern luxury."
+    },
+    "store_details": {
+      "address": "Rajabazar Pal Market opposite pillar no. 65, Bailey Road, Patna",
+      "phone": "+91 9113777874",
+      "hours": "12 AM to 8:30 PM"
+    }
+  },
+  "technical_and_accessibility": {
+    "icons": "Use 'lucide-react' for all icons (Phone, MapPin, Clock, Instagram, Menu, X).",
+    "animations": "Use framer-motion for slow, elegant reveal animations (y: 20 to 0, opacity 0 to 1, duration: 0.8s).",
+    "accessibility": "Ensure all text against dark backgrounds passes APCA contrast checks. Add 'data-testid' to all interactive elements (e.g., data-testid='whatsapp-fab', data-testid='contact-submit').",
+    "whatsapp_integration": "Implement a fixed floating action button (bottom-right) linking to WhatsApp (https://wa.me/919113777874) with a clean icon."
+  }
+}
