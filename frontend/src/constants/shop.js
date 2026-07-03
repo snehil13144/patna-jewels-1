@@ -136,36 +136,111 @@ export const HIGHLIGHTS = [
   { number: "100%", label: "Certified Diamonds" },
 ];
 
-export const SHOWROOM_GALLERY = [
+export const SHOWROOM_GALLERIES = [
   {
-    src: "https://images.unsplash.com/photo-1775021723698-b9afeaa084d1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBqZXdlbHJ5JTIwc3RvcmUlMjBpbnRlcmlvciUyMGdvbGR8ZW58MHx8fHwxNzgyODk3MDUxfDA&ixlib=rb-4.1.0&q=85",
-    alt: "Grand showroom interior with gold display",
-    caption: "The Grand Hall",
+    id: "grand-hall",
+    name: "Grand Hall",
+    subtitle: "The main showroom floor",
+    description:
+      "Warm sandstone walls, hand-polished wood cabinets and a cascade of ambient gold — the first impression that has welcomed families for generations.",
+    images: [
+      {
+        src: "https://images.unsplash.com/photo-1775021723698-b9afeaa084d1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBqZXdlbHJ5JTIwc3RvcmUlMjBpbnRlcmlvciUyMGdvbGR8ZW58MHx8fHwxNzgyODk3MDUxfDA&ixlib=rb-4.1.0&q=85",
+        alt: "Grand Hall — main display",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1600&q=80",
+        alt: "Grand Hall — chandelier and cabinets",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1512207736890-6ffed8a84e8d?auto=format&fit=crop&w=1600&q=80",
+        alt: "Grand Hall — seating and viewing",
+      },
+    ],
   },
   {
-    src: "https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1400&q=80",
-    alt: "Necklace display counter",
-    caption: "Necklace Counter",
+    id: "necklace-counter",
+    name: "Necklace Counter",
+    subtitle: "Haars, chokers and layered chains",
+    description:
+      "From single-line temple chains to statement Rani Haars — a curated wall of necklaces displayed under warm spot lighting for a true try-on moment.",
+    images: [
+      {
+        src: "https://images.pexels.com/photos/28976815/pexels-photo-28976815.jpeg",
+        alt: "Gold necklace on velvet display",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1600&q=80",
+        alt: "Chain necklace close-up",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=1600&q=80",
+        alt: "Necklace being modelled",
+      },
+    ],
   },
   {
-    src: "https://images.unsplash.com/photo-1633934542430-0905ccb5f050?auto=format&fit=crop&w=1400&q=80",
-    alt: "Bridal viewing lounge",
-    caption: "Bridal Lounge",
+    id: "bangles",
+    name: "Bangles",
+    subtitle: "The wall of gold and glass",
+    description:
+      "Rows upon rows of bangles — plain, kadas, meenakari and diamond-set — displayed on rotating racks that let you slip a set on in seconds.",
+    images: [
+      {
+        src: "https://images.unsplash.com/photo-1601924582971-df53a1f61f45?auto=format&fit=crop&w=1600&q=80",
+        alt: "Bangle wall display",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1600&q=80",
+        alt: "Stack of gold bangles",
+      },
+      {
+        src: "https://images.pexels.com/photos/691046/pexels-photo-691046.jpeg",
+        alt: "Bangles worn on wrist",
+      },
+    ],
   },
   {
-    src: "https://images.unsplash.com/photo-1620625515032-6ed0c1790c75?auto=format&fit=crop&w=1400&q=80",
-    alt: "Diamond viewing area with soft lighting",
-    caption: "Diamond Studio",
+    id: "bridal-lounge",
+    name: "Bridal Lounge",
+    subtitle: "A private space for the big day",
+    description:
+      "An intimate wood-panelled lounge with soft chairs, floor-length mirrors and dedicated karigars — reserved for full bridal viewings and consultations.",
+    images: [
+      {
+        src: "https://images.unsplash.com/photo-1617633150878-7df1d12a9a57?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBicmlkYWwlMjBqZXdlbHJ5fGVufDB8fHx8MTc4Mjg5NzAyOHww&ixlib=rb-4.1.0&q=85",
+        alt: "Bridal set styled",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1633934542430-0905ccb5f050?auto=format&fit=crop&w=1600&q=80",
+        alt: "Bridal viewing lounge",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1620625515032-6ed0c1790c75?auto=format&fit=crop&w=1600&q=80",
+        alt: "Bridal accessories close-up",
+      },
+    ],
   },
   {
-    src: "https://images.unsplash.com/photo-1601924582971-df53a1f61f45?auto=format&fit=crop&w=1400&q=80",
-    alt: "Bangle wall showcase",
-    caption: "The Bangle Wall",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1512207736890-6ffed8a84e8d?auto=format&fit=crop&w=1400&q=80",
-    alt: "Private consultation cabin",
-    caption: "Private Consultation",
+    id: "earrings",
+    name: "Earrings",
+    subtitle: "Jhumkas, studs, chandbalis",
+    description:
+      "A wall of curated earrings — from delicate everyday studs to statement chandbalis and traditional jhumkas, each backed with certification.",
+    images: [
+      {
+        src: "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=1600&q=80",
+        alt: "Gold earrings on display",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1631982690223-8aa4be0a2497?auto=format&fit=crop&w=1600&q=80",
+        alt: "Diamond studs close-up",
+      },
+      {
+        src: "https://images.unsplash.com/photo-1602283552698-7b0cf13ba3c9?auto=format&fit=crop&w=1600&q=80",
+        alt: "Traditional jhumka earrings",
+      },
+    ],
   },
 ];
 
