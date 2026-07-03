@@ -12,12 +12,13 @@ export const SHOP = {
   hours: "12:00 PM – 8:30 PM (All days)",
   instagram: "https://instagram.com/",
   facebook: "https://facebook.com/",
-  established: "Since 1998",
+  established: "Since 1975",
 };
 
 export const NAV_LINKS = [
   { label: "Home", href: "#home" },
   { label: "Collections", href: "#collections" },
+  { label: "Showroom", href: "#showroom" },
   { label: "Heritage", href: "#heritage" },
   { label: "Reviews", href: "#reviews" },
   { label: "Visit", href: "#visit" },
@@ -70,8 +71,20 @@ export const COLLECTIONS = [
       "Anklets, oxidised statement pieces and delicate silverware — a nod to timeless Indian craftsmanship.",
     image:
       "https://images.unsplash.com/photo-1696533700445-9cc60ac4a651?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwyfHxzaWx2ZXIlMjBqZXdlbHJ5JTIwdHJhZGl0aW9uYWx8ZW58MHx8fHwxNzgyODk3MDUxfDA&ixlib=rb-4.1.0&q=85",
-    span: "md:col-span-8",
-    ratio: "aspect-[16/9]",
+    span: "md:col-span-4",
+    ratio: "aspect-[4/3]",
+  },
+  {
+    key: "one-gram-gold",
+    title: "1 Gram Gold",
+    subtitle: "Gold-Plated Luxury",
+    tagline: "Everyday shine, accessible elegance",
+    description:
+      "Micron gold-plated jewellery with the look and feel of pure gold — perfect for daily wear, gifting and travel-safe styling.",
+    image:
+      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1400&q=80",
+    span: "md:col-span-4",
+    ratio: "aspect-[4/3]",
   },
 ];
 
@@ -117,10 +130,43 @@ export const TESTIMONIALS = [
 ];
 
 export const HIGHLIGHTS = [
-  { number: "25+", label: "Years of Craft" },
+  { number: "50+", label: "Years of Craft" },
   { number: "10,000+", label: "Happy Families" },
   { number: "BIS", label: "Hallmarked Gold" },
   { number: "100%", label: "Certified Diamonds" },
+];
+
+export const SHOWROOM_GALLERY = [
+  {
+    src: "https://images.unsplash.com/photo-1775021723698-b9afeaa084d1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBqZXdlbHJ5JTIwc3RvcmUlMjBpbnRlcmlvciUyMGdvbGR8ZW58MHx8fHwxNzgyODk3MDUxfDA&ixlib=rb-4.1.0&q=85",
+    alt: "Grand showroom interior with gold display",
+    caption: "The Grand Hall",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1400&q=80",
+    alt: "Necklace display counter",
+    caption: "Necklace Counter",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1633934542430-0905ccb5f050?auto=format&fit=crop&w=1400&q=80",
+    alt: "Bridal viewing lounge",
+    caption: "Bridal Lounge",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1620625515032-6ed0c1790c75?auto=format&fit=crop&w=1400&q=80",
+    alt: "Diamond viewing area with soft lighting",
+    caption: "Diamond Studio",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1601924582971-df53a1f61f45?auto=format&fit=crop&w=1400&q=80",
+    alt: "Bangle wall showcase",
+    caption: "The Bangle Wall",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1512207736890-6ffed8a84e8d?auto=format&fit=crop&w=1400&q=80",
+    alt: "Private consultation cabin",
+    caption: "Private Consultation",
+  },
 ];
 
 export const INTERESTS = [

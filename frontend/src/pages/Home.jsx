@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
+import RateTicker from "@/components/RateTicker";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import Collections from "@/components/Collections";
+import Showroom from "@/components/Showroom";
 import Heritage from "@/components/Heritage";
 import Highlights from "@/components/Highlights";
 import Testimonials from "@/components/Testimonials";
@@ -36,10 +38,12 @@ export default function Home() {
       className="min-h-screen bg-[#110A0C] text-[#FDFBF7] font-body"
     >
       <Navbar />
+      <RateTicker />
       <main>
         <Hero />
         <Marquee />
         <Collections />
+        <Showroom />
         <Heritage />
         <Highlights />
         <Testimonials />

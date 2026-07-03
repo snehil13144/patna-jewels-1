@@ -20,7 +20,7 @@ export default function Heritage() {
           </div>
           <div className="hidden md:block absolute -bottom-8 -right-8 w-40 h-40 bg-[#D4AF37] text-[#110A0C] flex items-center justify-center">
             <div className="text-center leading-tight">
-              <div className="font-serif-luxe text-4xl">25+</div>
+              <div className="font-serif-luxe text-4xl">50+</div>
               <div className="text-[10px] tracking-[0.3em] uppercase mt-1">
                 Years of Craft
               </div>
@@ -33,16 +33,16 @@ export default function Heritage() {
             Our Heritage
           </p>
           <h2 className="font-serif-luxe text-4xl md:text-6xl font-light tracking-tight text-[#FDFBF7] leading-[1.05]">
-            A quarter century of
+            Half a century of
             <br />
             <span className="italic text-[#D4AF37]">devotion</span> to the craft.
           </h2>
           <div className="gold-divider my-8 md:my-10 max-w-xs" />
           <p className="text-[#D9C8B4] font-light text-base md:text-lg leading-relaxed max-w-2xl">
-            Nestled on Bailey Road’s legendary Rajabazar, Abhushan Nirmata was
-            founded on a simple belief — that jewellery is not merely worn, but
-            inherited. Every ornament is a signature moment, cast in gold and
-            memory.
+            Nestled on Bailey Road’s legendary Rajabazar, Abhushan Nirmata has,
+            for over five decades, been founded on a simple belief — that
+            jewellery is not merely worn, but inherited. Every ornament is a
+            signature moment, cast in gold and memory.
           </p>
           <p className="text-[#D9C8B4] font-light text-base md:text-lg leading-relaxed max-w-2xl mt-5">
             Under the guidance of{" "}

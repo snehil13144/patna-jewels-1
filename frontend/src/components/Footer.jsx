@@ -14,7 +14,7 @@ export default function Footer() {
             Abhushan <span className="italic text-[#D4AF37]">Nirmata</span>
           </h3>
           <p className="mt-4 text-[#D9C8B4] font-light max-w-sm">
-            Crafting heirloom jewellery on Bailey Road, Patna since 1998.
+            Crafting heirloom jewellery on Bailey Road, Patna since 1975.
             Curated by {SHOP.owner}.
           </p>
           <div className="flex items-center gap-3 mt-8">

@@ -25,7 +25,7 @@ export default function Collections() {
             </h2>
           </div>
           <p className="max-w-md text-[#D9C8B4] font-light text-base md:text-lg reveal">
-            Four distinct expressions of Indian jewellery — each with its own
+            Five distinct expressions of Indian jewellery — each with its own
             character, story and craft.
           </p>
         </div>
