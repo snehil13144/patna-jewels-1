@@ -12,6 +12,7 @@ export const SHOP = {
   hours: "12:00 PM – 8:30 PM (All days)",
   instagram: "https://instagram.com/",
   facebook: "https://facebook.com/",
+  email: "abhushannirmata@gmail.com",
   established: "Since 1975",
 };
 
@@ -187,7 +188,7 @@ export const SHOWROOM_GALLERIES = [
       "Rows upon rows of bangles — plain, kadas, meenakari and diamond-set — displayed on rotating racks that let you slip a set on in seconds.",
     images: [
       {
-        src: "https://images.unsplash.com/photo-1601924582971-df53a1f61f45?auto=format&fit=crop&w=1600&q=80",
+        src: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1600&q=80",
         alt: "Bangle wall display",
       },
       {
@@ -237,7 +238,7 @@ export const SHOWROOM_GALLERIES = [
         alt: "Diamond studs close-up",
       },
       {
-        src: "https://images.unsplash.com/photo-1602283552698-7b0cf13ba3c9?auto=format&fit=crop&w=1600&q=80",
+        src: "https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?auto=format&fit=crop&w=1600&q=80",
         alt: "Traditional jhumka earrings",
       },
     ],

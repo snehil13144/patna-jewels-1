@@ -1,0 +1,35 @@
+{
+  "summary": "Focused verification of Instagram->Gmail swap and gallery image fixes. All acceptance criteria passed: Visit section shows Email row (mailto:abhushannirmata@gmail.com) with no Instagram entry; Footer's first social icon is Mail (mailto), no Instagram icon present; all 5 showroom gallery blocks render with correct 'X Gallery' headings; all 15 gallery images (including previously-broken Bangles and Earrings galleries) load successfully with naturalWidth>0; lightbox open/next/prev/close all work. Backend regression suite (4 pytest cases) 100% green.",
+  "tested_scope": ["backend", "frontend", "integration"],
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {"ui_bugs": [], "integration_issues": [], "design_issues": []},
+  "passed": [
+    "GET /api/ -> 200 with message field",
+    "GET /api/rates -> 200 with numeric gold_24k_per_gram_inr and silver_per_gram_inr",
+    "POST /api/enquiries valid payload -> 200",
+    "POST /api/enquiries missing fields -> 422",
+    "Visit section: data-testid='visit-email' anchor href = mailto:abhushannirmata@gmail.com and shows the email text",
+    "Visit section: data-testid='visit-instagram' does NOT exist; word 'Instagram' not present anywhere in the Visit section",
+    "Footer social icons order = [Email(mailto:abhushannirmata@gmail.com), Facebook, Call(tel:+919113777874)] - no Instagram",
+    "Showroom shows all 5 gallery blocks: gallery-block-grand-hall, gallery-block-necklace-counter, gallery-block-bangles, gallery-block-bridal-lounge, gallery-block-earrings with matching 'Grand Hall Gallery' etc. headings",
+    "All 15 gallery images (5 galleries x 3 imgs each) reachable (HTTP 200 via HEAD) and rendered in-browser (naturalWidth > 0). Bangles and Earrings galleries specifically verified fixed",
+    "Clicking gallery-bangles-image-0 opens data-testid='showroom-lightbox' with valid full-screen image loaded",
+    "Lightbox next / prev / close buttons all functional; lightbox unmounts after close"
+  ],
+  "failed": [],
+  "test_report_links": [
+    "/app/backend/tests/backend_test.py",
+    "/app/test_reports/pytest/pytest_results.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Minor: SHOP.instagram key still exists in /app/frontend/src/constants/shop.js but is no longer referenced anywhere - safe to remove for cleanliness (non-blocking)."
+  ],
+  "updated_files": ["/app/backend/tests/backend_test.py"],
+  "success_rate": {"backend": "100%", "frontend": "100%"},
+  "test_credentials": "none required",
+  "seed_data_creation": "One test enquiry inserted with name 'TEST_User' via POST /api/enquiries (safe test data with TEST_ prefix)",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Iteration 1 covered full site (contact form, hero, testimonials, collections, WhatsApp). Iteration 2 covered the Instagram->Gmail swap and gallery image replacements. Reusable pytest suite lives at /app/backend/tests/backend_test.py."
+}

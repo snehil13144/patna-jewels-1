@@ -1,6 +1,6 @@
 import React from "react";
 import { SHOP, NAV_LINKS } from "@/constants/shop";
-import { Instagram, Facebook, Phone, MapPin } from "lucide-react";
+import { Mail, Facebook, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -18,8 +18,8 @@ export default function Footer() {
             Curated by {SHOP.owner}.
           </p>
           <div className="flex items-center gap-3 mt-8">
-            <SocialIcon href={SHOP.instagram} label="Instagram">
-              <Instagram size={16} />
+            <SocialIcon href={`mailto:${SHOP.email}`} label="Email">
+              <Mail size={16} />
             </SocialIcon>
             <SocialIcon href={SHOP.facebook} label="Facebook">
               <Facebook size={16} />

@@ -1,5 +1,5 @@
 import React from "react";
-import { MapPin, Clock, Phone, Instagram } from "lucide-react";
+import { MapPin, Clock, Phone, Mail } from "lucide-react";
 import { SHOP } from "@/constants/shop";
 
 export default function Visit() {
@@ -48,11 +48,11 @@ export default function Visit() {
               testId="visit-phone"
             />
             <InfoRow
-              icon={<Instagram size={18} />}
-              title="Follow"
-              value="@abhushannirmata"
-              href={SHOP.instagram}
-              testId="visit-instagram"
+              icon={<Mail size={18} />}
+              title="Email"
+              value={SHOP.email}
+              href={`mailto:${SHOP.email}`}
+              testId="visit-email"
             />
           </div>
         </div>
