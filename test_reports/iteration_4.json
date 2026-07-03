@@ -1,0 +1,52 @@
+{
+  "summary": "Verified Vercel build safety-net configuration for date-fns pin. All four config files present and correct. Both npm --dry-run and yarn install completed with exit code 0 in isolated temp copies (no ERESOLVE, no date-fns@4 anywhere). Runtime regression on preview URL clean: home-page renders, rate ticker + contact form + collections + showroom galleries all present, 0 console errors.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "verification_details": {
+    "package_json": {
+      "direct_dep_date_fns": "3.6.0 (line 40)",
+      "overrides_date_fns": "3.6.0 (lines 97-99)",
+      "resolutions_date_fns": "3.6.0 (line 101, top of resolutions block)",
+      "packageManager": "yarn@1.22.22 pinned"
+    },
+    "vercel_json": {
+      "buildCommand": "yarn build",
+      "installCommand": "yarn install --network-timeout 300000",
+      "framework": "create-react-app",
+      "outputDirectory": "build"
+    },
+    "npmrc": "legacy-peer-deps=true present",
+    "yarn_lock": "Only date-fns@3.6.0 entry at line 4757. Zero references to date-fns@4.x (grep count = 0).",
+    "npm_install_dry_run": "Exit 0, 1495 packages, adds date-fns 3.6.0. Zero ERESOLVE errors.",
+    "yarn_install_fresh": "Exit 0 in 103.61s. node_modules/date-fns/package.json version = 3.6.0. Only one date-fns directory installed (no duplicates). Warnings shown are pre-existing resolution mismatches and peer dep warnings, not fatal.",
+    "runtime_smoke_test": {
+      "url": "https://patna-jewels-1.preview.emergentagent.com",
+      "home_page_testid": true,
+      "rate_ticker_visible": "Gold 24K ₹12,807/g, Gold 22K ₹11,740/g, Silver ₹192/g",
+      "contact_form_present": true,
+      "collections_data_testid_count": 7,
+      "showroom_gallery_testid_count": 23,
+      "console_errors": 0,
+      "supervisor_frontend": "RUNNING"
+    }
+  },
+  "test_report_links": [],
+  "action_items": [
+    "User must push /app/frontend/package.json, /app/frontend/vercel.json, /app/frontend/.npmrc, /app/frontend/yarn.lock to GitHub via Emergent's 'Save to GitHub' UI so Vercel picks up the new configuration. Once pushed, Vercel will use yarn (per vercel.json) which honors yarn.lock + resolutions and installs date-fns@3.6.0 deterministically."
+  ],
+  "critical_code_review_comments": [
+    "Safety-net configuration is triple-redundant and correct: yarn side pinned via resolutions + yarn.lock, npm side pinned via overrides + .npmrc legacy-peer-deps, Vercel forced to yarn via vercel.json. Under any package manager Vercel picks, date-fns@3.6.0 is enforced.",
+    "Recommend keeping packageManager field yarn@1.22.22 to further hint Vercel/corepack.",
+    "No code issues discovered during regression."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "n/a (not requested)", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Iteration 4 confirmed the date-fns pin holds under both npm and yarn install simulations run in /tmp temp copies. The frontend preview at https://patna-jewels-1.preview.emergentagent.com is running cleanly. Next agent: no action needed unless a new Vercel build failure is reported after user pushes changes to GitHub."
+}
